@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-wine-black text-white selection:bg-wine-burgundy selection:text-wine-gold;
+  }
+}
+
+.glass-card {
+  @apply bg-wine-slate/40 backdrop-blur-xl border border-wine-gold/10 rounded-2xl shadow-2xl;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 10px;
+}
